@@ -3,7 +3,6 @@
 <html>
 <head>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3-queue/3.0.4/d3-queue.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -14,16 +13,6 @@
         <h2>Which country grew from 1960 to 2017</h2>   
         <div id="chart"></div>
         <h2>source <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?end=2017&start=2017&view=bar/">World Bank Group</a></h2>
-    </div>
-
-
-    <div id="slider">
-        <form>
-        <label for="year">  Year: </label>
-        <input type="range" min=1960 max=2017 step=1 id="year" value=2017 oninput="selected_year.value = year.value">
-        <output name="selected_year" id="selected_year">2017</output>
-    </form>
-
     </div>
 
     <script>
